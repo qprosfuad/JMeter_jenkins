@@ -132,12 +132,12 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController">
-          <stringProp name="LoopController.loops">10</stringProp>
+          <stringProp name="LoopController.loops">2</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Landing_Page">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Landing_Page" enabled="true">
           <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
           <stringProp name="HTTPSampler.port">0</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -160,7 +160,7 @@
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home" enabled="true">
           <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
           <stringProp name="HTTPSampler.port">0</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
